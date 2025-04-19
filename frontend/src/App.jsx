@@ -11,6 +11,9 @@ import CurrentSchemePage from './Landingpage/SchemesPages/CurrentSchemePage'
 import StateScheme from './Landingpage/SchemesPages/StateScheme'
 import BlogHome from './Landingpage/BlogPages/BlogHome'
 import BlogDetail from './Landingpage/BlogPages/BlogDetails'
+import About from './Landingpage/About'
+import SchemeBlog from './Landingpage/BlogPages/SchemeBlog'
+import JobBlogs from './Landingpage/BlogPages/JobBlogs'
 
 
 
@@ -29,6 +32,9 @@ function App() {
         <Route path="/state-scheme" element={<StateScheme />} />
         <Route path="/blogs" element={<BlogHome />} />
         <Route path="/blog/:id" element={<BlogDetail />} />
+        <Route path="/about" element={<About />} />
+        <Route path="Jobs-Blogs" element={<JobBlogs />} />
+        <Route path="Scheme-Blogs" element={<SchemeBlog />} />
       </Routes>
     </>
   )

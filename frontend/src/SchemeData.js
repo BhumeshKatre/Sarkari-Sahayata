@@ -136,4 +136,22 @@ export const carouselItems = [
   },
 ];
 
+export const blogNavItems = [
+  {
+    title: "Home",
+    link: "/blogs",
+  },
+  {
+    title: "Jobs_Blogs",
+    link: "/Jobs-Blogs",
+  },
+  {
+    title: "Scheme_Blogs ",
+    link: "/Scheme-Blogs",
+  },
+  {
+    title: "About us", 
+    link: "/about",
+  },
 
+];
