@@ -1,18 +1,17 @@
 import React from "react";
 import logoImg from "../assets/logo-2.png";
-import { menuItem } from "../Data";
 import { Link } from "react-router-dom";
-const Navbar = () => {
+const Navbar = ({ menu }) => {
+  console.log(menu);
   return (
-    <div>
-      <nav class="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900">
+      <nav class="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900 sticky top-0 z-50 shadow-md">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl ">
-          <a
+          <Link
             href="https://flowbite.com"
             class="flex items-center  rtl:space-x-reverse"
           >
             <img src={logoImg} class="h-20 w-32" alt="Flowbite Logo" />
-          </a>
+          </Link>
           <button
             data-collapse-toggle="mega-menu-full"
             type="button"
@@ -42,7 +41,7 @@ const Navbar = () => {
             class="items-center justify-between font-medium hidden w-full md:flex md:w-auto md:order-1"
           >
             <ul class="flex flex-col  md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              {menuItem.map((item) => (
+              {menu.map((item) => (
                 <li key={item.id}>
                   <Link
                     to={item.link || '/'}
@@ -61,7 +60,6 @@ const Navbar = () => {
           class="mt-1 border-gray-200 shadow-xs bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600"
         ></div>
       </nav>
-    </div>
   );
 };
 

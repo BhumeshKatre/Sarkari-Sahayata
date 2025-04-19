@@ -4,8 +4,8 @@ import bhumesh from "../../assets/bhumesh.png"; // Replace with actual image pat
 const FounderSection = () => {
   const founder = {
     name: "Mr. Bhumesh Katre",
-    role: "Founder & CEO",
-    bio: "Former IAS officer with 15+ years of experience in public service, dedicated to bridging the gap between citizens and government schemes.",
+    role: "Founder & CEO – Sarkari Sahayata",
+    bio: "Final-year BCCA student and aspiring software developer with a deep interest in public welfare and technology. Founder of Sarkari Sahayata, a platform dedicated to simplifying access to government job listings and schemes for citizens.",
     mission: "To empower every Indian with easy access to their entitled benefits.",
     image: bhumesh, // Replace with actual path
     social: {
@@ -25,7 +25,7 @@ const FounderSection = () => {
         <div className="flex flex-col md:flex-row items-center justify-center gap-10 max-w-5xl mx-auto">
           {/* Founder Image */}
           <div className="w-full md:w-1/3 flex justify-center">
-            <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-blue-100 shadow-lg">
+            <div className="relative w-70 h-72 rounded-full overflow-hidden border-4 border-blue-100 shadow-lg">
               <img
                 src={founder.image}
                 alt={founder.name}
