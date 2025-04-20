@@ -78,17 +78,17 @@ export const categories = [
 
 export const schemeNavItems = [
   {
-    title: "Home",
-    link: "/",
+    title: "Current_Schemes",
+    link: "/current-schemes",
     icon: "FiHome",
     dropdown: false,
   },
   {
-    title: "Central Government",
+    title: "Central_Government",
     link: "/central",
   },
   {
-    title: "State Government",
+    title: "State_Government",
     link: "/state-scheme",
   },
   {

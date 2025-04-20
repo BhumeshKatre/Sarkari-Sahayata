@@ -19,13 +19,13 @@ export const mainPageMenuItem = [
   {
     id: 2,
     title: "Jobs",
-    link: "/latest-jobs",
+    link: "/current-jobs",
     icon: "briefcase",
   },
   {
     id: 3,
     title: "Schemes",
-    link: "/Schemes",
+    link: "/current-schemes",
     icon: "building",
   },
   {
@@ -39,6 +39,12 @@ export const mainPageMenuItem = [
     title: "Contact Us",
     link: "/contact-us",
     icon: "envelope",
+  },
+  {
+    id: 6,
+    title: "About Us",
+    link: "/about",
+    icon: "envelope",
   }
 ]
 
@@ -46,8 +52,8 @@ export const mainPageMenuItem = [
 export const jobPageMenuItem = [
   {
     id: 1,
-    title: "Home",
-    link: "/",
+    title: "Current_Jobs",
+    link: "/current-jobs",
     icon: "clock",
   },
   {

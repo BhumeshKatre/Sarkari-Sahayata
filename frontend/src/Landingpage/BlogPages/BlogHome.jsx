@@ -4,10 +4,11 @@ import BlogsCards from "../../Components/BlogComponents/BlogsCards";
 import Navbar from "../../Components/Navbar";
 import BlogFilter from "../../Components/BlogComponents/BlogFilter";
 import { blogNavItems } from "../../SchemeData";
+import Footer from "../../Components/Footer";
 
 const BlogHome = () => {
-    const [displayedPosts, setDisplayedPosts] = useState([]);
-  
+  const [displayedPosts, setDisplayedPosts] = useState([]);
+
   const schemes = [
     {
       id: 1,
@@ -183,11 +184,11 @@ const BlogHome = () => {
     <>
       <Navbar menu={blogNavItems} />
       <div className="w-[90%] mx-auto">
-      <BlogHero />
-      <BlogFilter posts={schemes} onFilterChange={setDisplayedPosts }/>
+        <BlogHero />
+        <BlogFilter posts={schemes} onFilterChange={setDisplayedPosts} />
         <BlogsCards schemes={schemes} />
       </div>
-
+      <Footer />
     </>
   );
 };
