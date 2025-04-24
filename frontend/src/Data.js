@@ -7,8 +7,7 @@ import pmkisan from "./assets/SchemeImg/pmkisan.png";
 import aayushman from "./assets/SchemeImg/aayushman.png";
 import ujwala from "./assets/SchemeImg/ujwala.png";
 
-
-
+// Main navigation menu items for the website
 export const mainPageMenuItem = [
   {
     id: 1,
@@ -48,7 +47,7 @@ export const mainPageMenuItem = [
   }
 ]
 
-// src/data/jobPageMenuItem.js
+// Job page specific navigation menu items
 export const jobPageMenuItem = [
   {
     id: 1,
@@ -74,10 +73,9 @@ export const jobPageMenuItem = [
     link: "/bank-jobs",
     icon: "university",
   },
- 
 ];
 
-
+// Latest job openings data
 export const latestJobs = [
   {
     id: 1,
@@ -113,6 +111,7 @@ export const latestJobs = [
   },
 ];
 
+// Hero section carousel images
 export const coaroselImages = [
   {
     id: 1,
@@ -141,7 +140,8 @@ export const coaroselImages = [
   },
 ];
 
-export const  popularSchemes = [
+// Popular government schemes data
+export const popularSchemes = [
   {
     id: 1,
     src:pmkisan,
@@ -198,7 +198,7 @@ export const  popularSchemes = [
   },
 ];
 
-// src/data/bankJobs.js
+// Bank job listings data
 export const bankJobs = [
   {
     id: 1,
@@ -248,7 +248,7 @@ export const bankJobs = [
   },
 ];
 
-// src/data/railwayJobs.js
+// Railway job listings data
 export const railwayJobs = [
   {
     id: 1,
@@ -297,6 +297,7 @@ export const railwayJobs = [
   },
 ];
 
+// Current bank job examinations data
 export const currentbankJobs = [
   {
     exam: "IBPS PO 2024",
@@ -318,18 +319,21 @@ export const currentbankJobs = [
   }
 ]
 
+// Benefits of choosing railway jobs
 export const whyChooseRailwayJob = [
   { icon: "🚂", title: "Job Security", desc: "Government sector stability with excellent benefits" },
   { icon: "📈", title: "Career Growth", desc: "Clear promotion paths and professional development" },
   { icon: "💰", title: "Great Benefits", desc: "Pension, healthcare, and travel allowances" },
 ]
 
+// Benefits of choosing bank jobs
 export const whyChooseBankJob = [
   { icon: "🏦", title: "Stable Career", desc: "Secure employment with regular promotions" },
   { icon: "📊", title: "Growth Potential", desc: "Clear career progression paths" },
   { icon: "💰", title: "Attractive Benefits", desc: "Competitive salaries, bonuses, and perks" },
 ]
 
+// Featured banking job positions
 export const bankingJobFeatured = [
   {
     title: "Relationship Manager",
@@ -360,6 +364,7 @@ export const bankingJobFeatured = [
   }
 ]
 
+// Banking job categories and their counts
 export const bankingJobCategory = [
   { title: "Banking Jobs", count: 1200 },
   { title: "Finance Jobs", count: 800 },
@@ -367,7 +372,7 @@ export const bankingJobCategory = [
   { title: "Investment Banking", count: 400 },
 ]
 
-
+// Latest government job notifications
 export const govtLatestNotification = [
   {
     title: "UPSC Civil Services 2024",
@@ -413,6 +418,7 @@ export const govtLatestNotification = [
   }
 ]
 
+// Quick links for government job sections
 export const govtQuickLinks = [
   { name: "UPSC", icon: "📚" },
   { name: "SSC", icon: "📝" },
@@ -422,6 +428,7 @@ export const govtQuickLinks = [
   { name: "Teaching", icon: "👩‍🏫" },
 ]
 
+// Benefits of government jobs
 export const govtJobBenifit = [
   { icon: "🛡️", title: "Job Security", desc: "Permanent employment with no layoffs" },
   { icon: "💰", title: "Pension Benefits", desc: "Post-retirement financial security" },
