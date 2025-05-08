@@ -26,6 +26,14 @@ import NotFoundPage from './Landingpage/NotFoundPage';
 // Styles
 import './App.css';
 
+// Admin Routes
+import Admin from './pages/Admin/Admin';
+import Home from './Components/AdminComponents/Home';
+import ManageJobs from './pages/Admin/JobManager';
+import ManageBlogs from './pages/Admin/BlogManager';
+import SchemeManager from './pages/Admin/SchemeManager';
+import AdminSettings from './pages/Admin/AdminSettings';
+
 function App() {
   return (
     <>
@@ -51,6 +59,17 @@ function App() {
         <Route path="/blog/:id" element={<BlogDetail />} />
         <Route path="/jobs-blogs" element={<JobBlogs />} />
         <Route path="/scheme-blogs" element={<SchemeBlog />} />
+
+
+        {/* Admin Panel   */}
+        <Route path="/admin" element={<Admin />}>
+          <Route path='dashboard' element={<Home />} />
+          <Route path='jobs' element={<ManageJobs />} />
+          <Route path='schemes' element={<SchemeManager />} />
+          <Route path='blogs' element={<ManageBlogs />} />
+          <Route path='settings' element={<AdminSettings />} />
+           
+        </Route>
       </Routes>
     </>
   );

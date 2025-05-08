@@ -51,25 +51,25 @@ export const mainPageMenuItem = [
 export const jobPageMenuItem = [
   {
     id: 1,
-    title: "Current_Jobs",
+    title: "Latest_jobs",
     link: "/current-jobs",
     icon: "clock",
   },
   {
     id: 5,
-    title: "Government Job",
+    title: "Government_Jobs",
     link: "/govt-jobs",
     icon: "university",
   },
   {
     id: 6,
-    title: "Railway Jobs",
+    title: "Railway_Jobs",
     link: "/railway-jobs",
     icon: "train",
   },
   {
     id: 7,
-    title: "Bank Jobs",
+    title: "Bank_Jobs",
     link: "/bank-jobs",
     icon: "university",
   },
