@@ -1,47 +1,15 @@
 import React from "react";
 
-const LatestJob = () => {
-  const latestJobs = [
-    {
-      id: 1,
-      title: "SSC CHSL Recruitment 2025",
-      department: "Staff Selection Commission",
-      location: "India (All Zones)",
-      lastDate: "May 15, 2025",
-      link: "https://ssc.nic.in",
-    },
-    {
-      id: 2,
-      title: "Indian Railways Apprentice",
-      department: "Indian Railways",
-      location: "Mumbai Division",
-      lastDate: "April 30, 2025",
-      link: "https://rrb.gov.in",
-    },
-    {
-      id: 3,
-      title: "MPSC Group C Prelims",
-      department: "Maharashtra Public Service Commission",
-      location: "Maharashtra",
-      lastDate: "May 10, 2025",
-      link: "https://mpsc.gov.in",
-    },
-    {
-      id: 3,
-      title: "MPSC Group C Prelims",
-      department: "Maharashtra Public Service Commission",
-      location: "Maharashtra",
-      lastDate: "May 10, 2025",
-      link: "https://mpsc.gov.in",
-    },
-  ];
-
-  const displayLatestJobs = latestJobs.slice(0, 3);
+const LatestJob = ({ jobs, head }) => {
+ 
+  const displayLatestJobs = jobs.slice(0, 3);
 
   return (
-    <div className="py-8 px-4 max-w-7xl mx-auto ">
+    <div className="py-8 px-4 max-w-7xl mx-auto  border-b-2 border-y-amber-900">
       <h2 className="text-2xl font-bold mb-6 text-gray-800">
-        📢 Latest Government Jobs
+        {
+          head ? head : "📢 Latest Government Jobs"
+        }
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -78,7 +46,7 @@ const LatestJob = () => {
           </div>
         ))}
       </div>
-      {latestJobs.length > 3 && (
+      {jobs.length > 3 && (
         <div className="flex justify-center mt-8">
           <button
             type="button"
